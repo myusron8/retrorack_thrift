@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RetroRack Thrift — Curated Vintage & Pre-Loved Fashion</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232C1E18'/%3E%3Cpath d='M18 22h28l-4 28H22L18 22z' fill='%23D97706'/%3E%3Cpath d='M25 22c0-5 3-9 7-9s7 4 7 9' stroke='%23FAF6F0' stroke-width='3' fill='none'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-overlay">
+      <div class="brand-wrap">
+        <div class="logo-box" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="44" height="44">
+            <rect width="64" height="64" rx="12" fill="#D97706"/>
+            <path d="M18 24h28l-4 26H22L18 24z" fill="#2C1E18"/>
+            <path d="M25 24c0-5 3-8 7-8s7 3 7 8" stroke="#FAF6F0" stroke-width="3" fill="none"/>
+          </svg>
+        </div>
+        <div>
+          <h1>RetroRack Thrift</h1>
+          <p class="tagline">Curated Vintage, Streetwear &amp; Sustainable Pre-Loved Fashion</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Running Text / Ticker -->
+  <div class="ticker-bar">
+    <div class="ticker-track">
+      <span>🔥 NEW DROP: Koleksi Jaket Denim &amp; Flanel 90s Sudah Tersedia! &nbsp;|&nbsp; ♻️ Dukung Sustainable Fashion Bersama RetroRack Thrift &nbsp;|&nbsp; 📦 Gratis Ongkir Se-Jabodetabek untuk Pembelian Minimal Rp 250.000 &nbsp;|&nbsp; 💬 Daftar Member Sekarang untuk Akses Early Drop!</span>
+    </div>
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav class="main-nav" aria-label="Navigasi Utama">
+    <button class="nav-toggle" id="navToggle" aria-label="Buka Menu">&#9776; Menu</button>
+    <ul class="nav-list" id="navList">
+      <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+      <li class="has-dropdown">
+        <a href="#about" class="nav-link" data-page="about">About &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="#about-profil" class="dropdown-link" data-page="about" data-section="profil">Profil Lembaga</a></li>
+          <li><a href="#about-sejarah" class="dropdown-link" data-page="about" data-section="sejarah">Sejarah</a></li>
+          <li><a href="#about-visimisi" class="dropdown-link" data-page="about" data-section="visimisi">Visi &amp; Misi</a></li>
+          <li><a href="#about-tujuan" class="dropdown-link" data-page="about" data-section="tujuan">Tujuan</a></li>
+          <li><a href="#about-struktur" class="dropdown-link" data-page="about" data-section="struktur">Struktur Organisasi</a></li>
+        </ul>
+      </li>
+      <li><a href="#gallery" class="nav-link" data-page="gallery">Gallery</a></li>
+      <li><a href="#registration" class="nav-link" data-page="registration">Registration</a></li>
+      <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Main Body -->
+    <main class="main-body">
+
+      <!-- PAGE: HOME -->
+      <section id="page-home" class="page-section active">
+        <!-- Auto-sliding Carousel -->
+        <div class="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide" style="background-image: linear-gradient(rgba(44,30,24,0.55), rgba(44,30,24,0.65)), url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1200&q=80');">
+              <div class="slide-caption">
+                <h2>Koleksi Vintage Pilihan</h2>
+                <p>Setiap pakaian melalui proses kurasi, cuci uap, dan inspeksi kualitas terbaik.</p>
+              </div>
+            </div>
+            <div class="carousel-slide" style="background-image: linear-gradient(rgba(44,30,24,0.55), rgba(44,30,24,0.65)), url('https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=80');">
+              <div class="slide-caption">
+                <h2>Gaya Unik, Harga Bersahabat</h2>
+                <p>Temukan jaket denim, flanel 90s, hingga crewneck langka tanpa menguras dompet.</p>
+              </div>
+            </div>
+            <div class="carousel-slide" style="background-image: linear-gradient(rgba(44,30,24,0.55), rgba(44,30,24,0.65)), url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80');">
+              <div class="slide-caption">
+                <h2>Sustainable Fashion Movement</h2>
+                <p>Kurangi limbah tekstil dengan memberi kehidupan kedua pada pakaian berkualitas.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn prev" id="prevSlide" aria-label="Slide Sebelumnya">&#10094;</button>
+          <button class="carousel-btn next" id="nextSlide" aria-label="Slide Berikutnya">&#10095;</button>
+        </div>
+
+        <div class="welcome-card">
+          <h2>Selamat Datang di RetroRack Thrift</h2>
+          <p>
+            <strong>RetroRack Thrift</strong> adalah platform bisnis online pakaian pre-loved dan vintage terkurasi yang berbasis di Jakarta Timur. Kami menghadirkan koleksi pakaian bekas berkualitas tinggi—mulai dari jaket denim klasik, kemeja flanel era 90-an, hingga streetwear langka—dengan standar kebersihan dan kelayakan pakai yang ketat.
+          </p>
+        </div>
+
+        <h2 class="section-title">Artikel &amp; Informasi Terbaru</h2>
+        <div class="articles-grid">
+          <!-- Artikel 1 -->
+          <article class="article-card">
+            <span class="article-badge">Edukasi</span>
+            <h3><a href="#article-1" class="article-title-link" data-article="1">Mengapa Thrifting Menjadi Tren Fashion Berkelanjutan?</a></h3>
+            <p class="article-meta">Diposting: 5 November 2026 &bull; Oleh Admin</p>
+            <p>Industri fast fashion menyumbang jutaan ton limbah tekstil setiap tahunnya. Thrifting hadir sebagai solusi cerdas untuk tampil stylish sekaligus menjaga kelestarian lingkungan...</p>
+            <button class="btn-readmore" data-article="1">Read More &rarr;</button>
+          </article>
+
+          <!-- Artikel 2 -->
+          <article class="article-card">
+            <span class="article-badge">Panduan</span>
+            <h3><a href="#article-2" class="article-title-link" data-article="2">5 Cara Merawat Jaket Denim Vintage Agar Tetap Awet</a></h3>
+            <p class="article-meta">Diposting: 2 November 2026 &bull; Oleh Tim Kurasi</p>
+            <p>Jaket denim vintage memiliki karakter bahan yang unik. Agar warna fading tetap alami dan serat kain tidak cepat rusak, hindari mencuci terlalu sering dengan deterjen keras...</p>
+            <button class="btn-readmore" data-article="2">Read More &rarr;</button>
+          </article>
+
+          <!-- Artikel 3 -->
+          <article class="article-card">
+            <span class="article-badge">Pengumuman</span>
+            <h3><a href="#article-3" class="article-title-link" data-article="3">Grand Opening Drop #12: Koleksi Flanel &amp; Crewneck 90s</a></h3>
+            <p class="article-meta">Diposting: 28 Oktober 2026 &bull; Oleh Uda Ucon</p>
+            <p>Kabar gembira bagi para pemburu barang antik! Akhir pekan ini RetroRack Thrift merilis lebih dari 50 item flanel dan crewneck pilihan dari brand ternama era 90-an...</p>
+            <button class="btn-readmore" data-article="3">Read More &rarr;</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- PAGE: ARTICLE DETAIL -->
+      <section id="page-article-detail" class="page-section">
+        <button class="btn-back" id="backToHome">&larr; Kembali ke Home</button>
+        <article class="article-full" id="articleFullContent"></article>
+      </section>
+
+      <!-- PAGE: ABOUT -->
+      <section id="page-about" class="page-section">
+        <h2 class="section-title">Tentang RetroRack Thrift</h2>
+
+        <div id="about-profil" class="about-block">
+          <h3>1. Profil Lembaga</h3>
+          <p>
+            <strong>RetroRack Thrift</strong> merupakan unit usaha ritel fashion berbasis online yang berfokus pada penjualan pakaian bekas berkualitas (<em>curated pre-loved &amp; vintage clothing</em>). Berdiri sejak tahun 2023, kami berkomitmen menyediakan alternatif fashion yang unik, terjangkau, dan ramah lingkungan bagi generasi muda Indonesia.
+          </p>
+        </div>
+
+        <div id="about-sejarah" class="about-block">
+          <h3>2. Sejarah</h3>
+          <p>
+            Berawal dari hobi berburu pakaian vintage di pasar loak Jakarta pada tahun 2022, pendiri kami melihat tingginya minat anak muda terhadap gaya retro namun sering terkendala oleh kualitas barang yang belum terkurasi. Pada awal 2023, RetroRack Thrift resmi diluncurkan secara daring dengan sistem kurasi ketat, pencucian higienis (<em>steam &amp; sanitize</em>), serta pengemasan modern.
+          </p>
+        </div>
+
+        <div id="about-visimisi" class="about-block">
+          <h3>3. Visi &amp; Misi</h3>
+          <p><strong>Visi:</strong> Menjadi pelopor toko thrift online terpercaya di Indonesia yang mengedepankan kualitas, keunikan gaya, dan keberlanjutan lingkungan.</p>
+          <p><strong>Misi:</strong></p>
+          <ul>
+            <li>Menyediakan pakaian pre-loved berkualitas tinggi yang telah melalui proses sortir dan sterilisasi.</li>
+            <li>Mengedukasi masyarakat mengenai pentingnya <em>sustainable fashion</em> untuk mengurangi limbah tekstil.</li>
+            <li>Memberikan pelayanan transaksi online yang cepat, transparan, dan ramah pelanggan.</li>
+          </ul>
+        </div>
+
+        <div id="about-tujuan" class="about-block">
+          <h3>4. Tujuan</h3>
+          <ul>
+            <li>Memperpanjang siklus hidup pakaian layak pakai agar tidak berakhir di tempat pembuangan akhir.</li>
+            <li>Membantu pelanggan menemukan identitas gaya berpakaian yang autentik dengan harga terjangkau.</li>
+            <li>Membangun komunitas pecinta fashion vintage yang aktif dan saling mendukung.</li>
+          </ul>
+        </div>
+
+        <div id="about-struktur" class="about-block">
+          <h3>5. Struktur Organisasi</h3>
+          <div class="org-grid">
+            <div class="org-card">
+              <h4>Uda Ucon</h4>
+              <p>Founder &amp; CEO</p>
+            </div>
+            <div class="org-card">
+              <h4>Raka Pratama</h4>
+              <p>Head of Curation &amp; QC</p>
+            </div>
+            <div class="org-card">
+              <h4>Nadia Putri</h4>
+              <p>Digital Marketing &amp; Social Media</p>
+            </div>
+            <div class="org-card">
+              <h4>Bagas Santoso</h4>
+              <p>Operations &amp; Logistics</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE: GALLERY -->
+      <section id="page-gallery" class="page-section">
+        <h2 class="section-title">Katalog &amp; Galeri Produk</h2>
+        <p class="section-desc">Klik gambar untuk melihat detail produk dalam tampilan penuh.</p>
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="gallery-item" data-title="90s Levi's Denim Trucker Jacket" data-price="Rp 285.000">
+            <img src="https://images.unsplash.com/photo-1551537482-f2075a1d41f2?auto=format&fit=crop&w=800&q=80" alt="90s Levi's Denim Trucker Jacket" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300?text=Denim+Jacket'" />
+            <div class="gallery-caption">
+              <h4>90s Denim Trucker Jacket</h4>
+              <span>Rp 285.000 &bull; Size L</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-title="Vintage Plaid Flannel Overshirt" data-price="Rp 145.000">
+            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80" alt="Vintage Plaid Flannel Overshirt" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300?text=Flannel+Shirt'" />
+            <div class="gallery-caption">
+              <h4>Vintage Plaid Flannel</h4>
+              <span>Rp 145.000 &bull; Size M</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-title="Retro Graphic Band Tee" data-price="Rp 120.000">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Retro Graphic Band Tee" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300?text=Vintage+Tee'" />
+            <div class="gallery-caption">
+              <h4>Retro Graphic Tee</h4>
+              <span>Rp 120.000 &bull; Size XL</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-title="Corduroy Carpenter Pants" data-price="Rp 195.000">
+            <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80" alt="Corduroy Carpenter Pants" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300?text=Corduroy+Pants'" />
+            <div class="gallery-caption">
+              <h4>Corduroy Carpenter Pants</h4>
+              <span>Rp 195.000 &bull; Size 32</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-title="90s Colorblock Windbreaker" data-price="Rp 210.000">
+            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80" alt="90s Colorblock Windbreaker" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300?text=Windbreaker'" />
+            <div class="gallery-caption">
+              <h4>90s Colorblock Windbreaker</h4>
+              <span>Rp 210.000 &bull; Size L</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-title="USA Heavyweight Crewneck" data-price="Rp 175.000">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80" alt="USA Heavyweight Crewneck" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300?text=Crewneck'" />
+            <div class="gallery-caption">
+              <h4>USA Heavyweight Crewneck</h4>
+              <span>Rp 175.000 &bull; Size M</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE: REGISTRATION -->
+      <section id="page-registration" class="page-section">
+        <h2 class="section-title">Pendaftaran Member RetroRack</h2>
+        <p class="section-desc">Daftar sebagai member untuk mendapatkan akses <em>Early Drop</em> dan diskon khusus 10% pada pembelian pertama.</p>
+        <form id="regForm" class="styled-form">
+          <div class="form-group">
+            <label for="regName">Nama Lengkap</label>
+            <input type="text" id="regName" required placeholder="Masukkan nama lengkap Anda" />
+          </div>
+          <div class="form-group">
+            <label for="regEmail">Alamat Email</label>
+            <input type="email" id="regEmail" required placeholder="contoh@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="regPhone">Nomor WhatsApp</label>
+            <input type="tel" id="regPhone" required placeholder="0812xxxxxxxx" />
+          </div>
+          <div class="form-group">
+            <label for="regSize">Ukuran Pakaian Favorit</label>
+            <select id="regSize" required>
+              <option value="">-- Pilih Ukuran --</option>
+              <option value="S">S (Small)</option>
+              <option value="M">M (Medium)</option>
+              <option value="L">L (Large)</option>
+              <option value="XL">XL (Extra Large)</option>
+              <option value="Oversize">Oversize / Vintage Fit</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="regStyle">Gaya Thrifting Favorit</label>
+            <select id="regStyle" required>
+              <option value="">-- Pilih Gaya --</option>
+              <option value="90s Streetwear">90s Streetwear</option>
+              <option value="Workwear & Denim">Workwear &amp; Denim</option>
+              <option value="Vintage Casual">Vintage Casual</option>
+              <option value="Sporty Retro">Sporty Retro</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit">Daftar Sekarang</button>
+          <div id="regFeedback" class="form-feedback" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <!-- PAGE: CONTACT -->
+      <section id="page-contact" class="page-section">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <div class="contact-info-box">
+          <p><strong>Email:</strong> hello@retrorackthrift.id</p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank" rel="noopener">@retrorack.thrift</a></p>
+          <p><strong>WhatsApp:</strong> +62 812-3456-7890</p>
+          <p><strong>Alamat Studio:</strong> Jl. Pemuda No. 45, Rawamangun, Jakarta Timur</p>
+        </div>
+
+        <form id="contactForm" class="styled-form">
+          <div class="form-group">
+            <label for="contactName">Nama</label>
+            <input type="text" id="contactName" required placeholder="Nama Anda" />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" required placeholder="Email Anda" />
+          </div>
+          <div class="form-group">
+            <label for="contactInst">Institusi / Komunitas</label>
+            <input type="text" id="contactInst" required placeholder="Nama kampus, perusahaan, atau komunitas" />
+          </div>
+          <div class="form-group">
+            <label for="contactMsg">Pesan</label>
+            <textarea id="contactMsg" rows="4" required placeholder="Tulis pesan atau pertanyaan Anda di sini..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Kirim Pesan</button>
+          <div id="contactFeedback" class="form-feedback" aria-live="polite"></div>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Widget Jam -->
+      <div class="widget">
+        <h3>Waktu Saat Ini</h3>
+        <div class="clock-display" id="liveClock">00:00:00</div>
+        <div class="date-display" id="liveDate">Memuat tanggal...</div>
+      </div>
+
+      <!-- Widget Profil Pemilik -->
+      <div class="widget">
+        <h3>Profil Pemilik</h3>
+        <div class="owner-profile">
+          <div class="owner-avatar">UU</div>
+          <div>
+            <h4>Uda Ucon</h4>
+            <p>Founder &amp; Curator di RetroRack Thrift. Pecinta denim vintage &amp; gerakan sustainable fashion sejak 2022.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Widget Statistik Pengunjung -->
+      <div class="widget">
+        <h3>Statistik Pengunjung</h3>
+        <ul class="stats-list">
+          <li><span>Pengunjung Hari Ini:</span> <strong id="statToday">128</strong></li>
+          <li><span>Total Pengunjung:</span> <strong id="statTotal">4.892</strong></li>
+          <li><span>Item Terjual:</span> <strong>342 pcs</strong></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 RetroRack Thrift. All Rights Reserved. | Design by <strong>Ucon</strong></p>
+    <p>Official Website: <a href="https://retrorackthrift.id" target="_blank" rel="noopener">https://retrorackthrift.id</a></p>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox" aria-hidden="true">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
